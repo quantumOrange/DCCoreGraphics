@@ -28,15 +28,19 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/quantumOrange/DCCoreGraphics.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DCCoreGraphics/Classes/**/*'
+  s.source_files = 'DCCoreGraphics/Sources/**/*'
   
   # s.resource_bundles = {
   #   'DCCoreGraphics' => ['DCCoreGraphics/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'Pod/Sources/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'DCCoreGraphics/Tests/**/*'
+  end
 end

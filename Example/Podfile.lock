@@ -1,0 +1,16 @@
+PODS:
+  - DCCoreGraphics (0.1.0)
+
+DEPENDENCIES:
+  - DCCoreGraphics (from `../`)
+
+EXTERNAL SOURCES:
+  DCCoreGraphics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DCCoreGraphics: dab11c1b53f984faa361ee1c5084f6c458afa6c2
+
+PODFILE CHECKSUM: 36becb9d06ba1f6ea7b9d4e33103e4a779066dfc
+
+COCOAPODS: 1.5.3

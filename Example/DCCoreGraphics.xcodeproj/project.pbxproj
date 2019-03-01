@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		02A8157A2C0FAEF91D3FBA91 /* Pods_DCCoreGraphics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCCoreGraphics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBBC35C4864BE8F644BE490 /* Pods-DCCoreGraphics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCCoreGraphics_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCCoreGraphics_Example/Pods-DCCoreGraphics_Example.release.xcconfig"; sourceTree = "<group>"; };
-		368AAC298475282813654701 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		368AAC298475282813654701 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DCCoreGraphics_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCCoreGraphics_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		7E9D6C6FECDF58F2B2B9DB13 /* Pods-DCCoreGraphics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCCoreGraphics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCCoreGraphics_Tests/Pods-DCCoreGraphics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6D2B177862CDDF07FFED4D2 /* Pods-DCCoreGraphics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCCoreGraphics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCCoreGraphics_Tests/Pods-DCCoreGraphics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CD312EE67A67FCC1C51F4CE8 /* Pods_DCCoreGraphics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCCoreGraphics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFDFE72398D684020C8987F2 /* DCCoreGraphics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DCCoreGraphics.podspec; path = ../DCCoreGraphics.podspec; sourceTree = "<group>"; };
-		F145AC76D090D7DF4B46CB30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CFDFE72398D684020C8987F2 /* DCCoreGraphics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DCCoreGraphics.podspec; path = ../DCCoreGraphics.podspec; sourceTree = "<group>"; };
+		F145AC76D090D7DF4B46CB30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E1F6B588B9834D63A6384176 /* [CP] Embed Pods Frameworks */,
+				25EA62C1A1D57DD629E57589 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 84Y3R5UC5Q;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 84Y3R5UC5Q;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -261,6 +263,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25EA62C1A1D57DD629E57589 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DCCoreGraphics_Example/Pods-DCCoreGraphics_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DCCoreGraphics/DCCoreGraphics.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCCoreGraphics.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCCoreGraphics_Example/Pods-DCCoreGraphics_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D9FA5E0C852A3809089CA94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,28 +327,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1F6B588B9834D63A6384176 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DCCoreGraphics_Example/Pods-DCCoreGraphics_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DCCoreGraphics/DCCoreGraphics.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCCoreGraphics.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCCoreGraphics_Example/Pods-DCCoreGraphics_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -468,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -481,7 +483,9 @@
 			baseConfigurationReference = 7427B3C933B46D60A87A4D1D /* Pods-DCCoreGraphics_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84Y3R5UC5Q;
 				INFOPLIST_FILE = DCCoreGraphics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -496,7 +500,9 @@
 			baseConfigurationReference = 0CBBC35C4864BE8F644BE490 /* Pods-DCCoreGraphics_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84Y3R5UC5Q;
 				INFOPLIST_FILE = DCCoreGraphics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -510,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E9D6C6FECDF58F2B2B9DB13 /* Pods-DCCoreGraphics_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 84Y3R5UC5Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -532,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6D2B177862CDDF07FFED4D2 /* Pods-DCCoreGraphics_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 84Y3R5UC5Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
